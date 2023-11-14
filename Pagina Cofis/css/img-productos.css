@@ -1,0 +1,20 @@
+.img-productos{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: 50px 0 50px 50px;
+}
+
+.img-productos img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.img-productos img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}

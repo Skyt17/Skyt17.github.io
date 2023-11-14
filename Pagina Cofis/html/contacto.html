@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFI'S - Contacto</title>
+    <script src="https://kit.fontawesome.com/abfc8edc4a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/Logo insta cuadrado chico 50.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="menu container">
+                <a href="../index.html" class="logo"><img src="../img/logo insta.jpg" alt=""></a>
+                <input type="checkbox" id="menu"/>
+                <label for="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="menu-icono"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f2f0f5}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    <!-- <img src="Logo insta cuadrado chico 50.png" alt="" class="menu-icono"> -->
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section class="imagen imagen-contacto">
+            <div class="imagen-cont">
+                <h1>
+                    Contactenos
+                </h1>
+            </div>
+        </section>
+    </header>
+
+    <main class="padding-texto">
+        <form action="https://formsubmit.co/cofi.vestimenta@gmail.com" method="POST"class="form">
+            <fieldset>
+                <div class="contenedor-campos">
+                    <label for="" class="titulo-form">Enviar un Correo</label>
+
+                    <div class="campo">
+                        <input class="input-text" name="Nombre" type="text" placeholder="Nombre">  <!-- checkbox, radio - tel, email, number -->
+                    </div>
+
+                    <div class="campo">
+                        <input class="input-text" name="Teléfono" type="tel" placeholder="Teléfono">
+                    </div>
+
+                    <div class="campo">
+                        <input class="input-text" name="Correo" type="email" placeholder="Correo">
+                    </div>
+
+                    <div class="campo">
+                        <textarea class="input-text" name="Texto" id="" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+                    </div>
+                </div> <!-- Contenedor de Campos -->
+                <div class="alinear-derecha flex">
+                    <!-- <input clp-frec.htmlss="boton" type="submit" placeholder="Enviar"> -->
+                    <button type="submit" class="boton">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <a href="p-frec.html">Preguntas frecuentes</a>
+        <p>COFI'S© 2023 ~ Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        window.onload = function() {
+        var inputs = document.getElementsByClassName('input-text');
+        for(var i = 0; i < inputs.length; i++) {
+            inputs[i].addEventListener('blur', function() {
+            if(this.value.trim() !== '') {
+                this.classList.add('filled');
+            } else {
+                this.classList.remove('filled');
+            }
+            });
+        }
+        };
+    </script>
+</body>
+</html>
